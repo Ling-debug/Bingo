@@ -1,0 +1,71 @@
+<view>
+  <!-- 调试信息 -->
+  <view wx:if="{{false}}" style="padding: 20rpx; color: red;">
+    调试信息: cartList长度={{cartList.length}}, allChecked={{allChecked}}
+  </view>
+
+  <!-- 购物车列表 -->
+  <view wx:if="{{cartList.length > 0}}" class="container goods-wrap">
+    <view class="goods-item" wx:for="{{cartList}}" wx:key="id" wx:for-item="item" wx:for-index="index">
+      <van-swipe-cell right-width="{{65}}">
+        <van-cell-group>
+          <view class="goods-info">
+            <view class="left" catchtap="toggleItemCheck" data-index="{{index}}">
+              <!-- 单个商品复选框 -->
+							<van-checkbox 
+								checked="{{item.checked}}" 
+								custom-class="item-checkbox"
+								checked-color="#FA4126"
+							/>
+            </view>
+            
+            <view class="mid">
+              <image src="{{item.image}}" mode="aspectFill" class="img"/>
+            </view>
+            
+            <view class="right">
+              <view class="title">{{item.name}}</view>
+              <view class="price-line">
+                <text class="price">¥{{item.price}}</text>
+                <van-stepper 
+                  value="{{item.count}}" 
+                  bind:change="onChangeCount" 
+                  data-id="{{item.id}}"
+                  class="stepper"
+                />
+              </view>
+              <view class="blessing">{{item.blessing || '暂无备注'}}</view>
+            </view>
+          </view>
+        </van-cell-group>
+        <view slot="right" class="delete-btn" bindtap="onDeleteGoods" data-id="{{item.id}}">删除</view>
+      </van-swipe-cell>
+    </view>
+  </view>
+
+  <!-- 空状态提示 -->
+  <view wx:else class="empty-cart">
+    <van-empty image="cart" description="购物车空空如也～">
+      <navigator url="/pages/index/index" open-type="switchTab">
+        <van-button round type="danger">去逛逛</van-button>
+      </navigator>
+    </van-empty>
+  </view>
+
+  <!-- 底部结算栏 -->
+  <van-submit-bar
+    wx:if="{{cartList.length > 0}}"
+    price="{{totalPrice * 100}}"
+    button-text="去结算"
+    safe-area-inset-bottom
+  >
+    <view catchtap="toggleCheckAll">
+      <!-- 全选复选框 -->
+			<van-checkbox
+				checked="{{allChecked}}"
+				custom-class="all-checkbox"
+				checked-color="#FA4126"
+			>全选</van-checkbox>
+    </view>
+  </van-submit-bar>
+</view>

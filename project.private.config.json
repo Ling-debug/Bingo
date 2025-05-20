@@ -1,0 +1,71 @@
+{
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "i%E9%8C%A6%E9%AF%89%E3%81%AE%E5%BA%97",
+  "setting": {
+    "compileHotReLoad": false,
+    "urlCheck": false
+  },
+  "libVersion": "trial",
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "提交订单",
+          "pathName": "pages/order/detail/detail",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "商品数据",
+          "pathName": "modules/goodModule/pages/goods/detail/detail",
+          "query": "goodsId=1",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "商品列表",
+          "pathName": "modules/goodModule/pages/goods/list/list",
+          "query": "category1Id=1",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "更新个人资料",
+          "pathName": "modules/settingModule/pages/profile/profile",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "我的",
+          "pathName": "pages/my/my",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "授权登录",
+          "pathName": "pages/login/login",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "商品分类",
+          "pathName": "pages/category/category",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "测试页面",
+          "pathName": "pages/test/test",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,80 @@
+<view class="container address">
+  <form bindsubmit="saveAddress">
+    <view class="address-info">
+      <!-- 收货人 -->
+      <view class="row">
+        <text class="title">收货人</text>
+        <input
+          name="name"
+          value="{{formData.name}}"
+          placeholder="请输入收货人姓名"
+          placeholder-style="color:#969799"
+          maxlength="20"
+        />
+      </view>
+
+      <!-- 手机号码 -->
+      <view class="row">
+        <text class="title">手机号码</text>
+        <input
+          name="phone"
+          value="{{formData.phone}}"
+          type="number"
+          placeholder="请输入手机号码"
+          placeholder-style="color:#969799"
+          maxlength="11"
+        />
+      </view>
+
+      <!-- 省市区选择 -->
+      <view class="row">
+        <text class="title">所在地区</text>
+        <picker 
+          name="region"
+          mode="region" 
+          value="{{regionValue}}"
+          bindchange="onRegionChange"
+        >
+          <view class="{{regionText ? 'region-selected' : 'region-placeholder'}}">
+            {{regionText || '请选择省市区'}}
+          </view>
+        </picker>
+        <view class="location" bindtap="handleLocation">
+          <van-icon name="location-o" color="#f3514f" />
+          <text>定位</text>
+        </view>
+      </view>
+
+      <!-- 详细地址 -->
+      <view class="row">
+        <text class="title">详细地址</text>
+        <textarea
+          name="address"
+          value="{{formData.address}}"
+          placeholder="街道、门牌号等详细信息"
+          placeholder-style="color:#969799"
+          auto-height
+          maxlength="100"
+        />
+      </view>
+
+      <!-- 默认地址 -->
+      <view class="row">
+        <text class="title">设为默认地址</text>
+        <switch
+          name="isDefault"
+          checked="{{formData.isDefault}}"
+          color="#f3514f"
+        />
+      </view>
+    </view>
+
+    <button 
+      formType="submit"
+      class="save-btn"
+      hover-class="btn-hover"
+    >
+      {{addressId ? '更新地址' : '保存地址'}}
+    </button>
+  </form>
+</view>

@@ -1,0 +1,542 @@
+<!--
+此文件为开发者工具生成，生成时间: 2025/5/9下午1:19:13
+使用方法：
+在 C:\Ahomework\xcx\i錦鯉の店\miniprogram\pages\index\index.wxml 引入模板
+
+```
+<import src="index.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+```
+
+在 C:\Ahomework\xcx\i錦鯉の店\miniprogram\pages\index\index.wxss 中引入样式
+```
+@import "./index.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="index-container">
+      <view class="window-bgc"></view>
+      <view class="container">
+        <view is="pages/index/banner/banner">
+          <view class="banner--swiper-box">
+            <swiper autoplay="false" circular="true" class="banner--swiper" duration="1000" indicator-active-color="#FF734C" indicator-color="rgba(0, 0, 0, .3)" interval="2000" current="0">
+              <swiper-item class="banner--swiper-item swiper-item-1">
+                <navigator class="banner--navigator">
+                  <image class="banner--img sk-image"></image>
+                </navigator>
+              </swiper-item>
+            </swiper>
+            <view class="banner--indicator">
+              <text class="banner--rectangle"></text>
+              <text class="banner--active banner--rectangle"></text>
+              <text class="banner--rectangle"></text>
+            </view>
+          </view>
+        </view>
+        <view is="pages/index/entrance/entrance">
+          <view class="entrance--nav-list">
+            <view class="entrance--nav-item">
+              <navigator class="entrance--navigator-nav">
+                <image class="entrance--nav-img sk-image"></image>
+                <text class="entrance--nav-text sk-transparent sk-text-14-2857-664 sk-text">食品</text>
+              </navigator>
+            </view>
+            <view class="entrance--nav-item">
+              <navigator class="entrance--navigator-nav">
+                <image class="entrance--nav-img sk-image"></image>
+                <text class="entrance--nav-text sk-transparent sk-text-14-2857-62 sk-text">衣服</text>
+              </navigator>
+            </view>
+            <view class="entrance--nav-item">
+              <navigator class="entrance--navigator-nav">
+                <image class="entrance--nav-img sk-image"></image>
+                <text class="entrance--nav-text sk-transparent sk-text-14-2857-868 sk-text">百货</text>
+              </navigator>
+            </view>
+            <view class="entrance--nav-item">
+              <navigator class="entrance--navigator-nav">
+                <image class="entrance--nav-img sk-image"></image>
+                <text class="entrance--nav-text sk-transparent sk-text-14-2857-594 sk-text">水果</text>
+              </navigator>
+            </view>
+            <view class="entrance--nav-item">
+              <navigator class="entrance--navigator-nav">
+                <image class="entrance--nav-img sk-image"></image>
+                <text class="entrance--nav-text sk-transparent sk-text-14-2857-219 sk-text">生鲜</text>
+              </navigator>
+            </view>
+            <view class="entrance--nav-item entrance--small">
+              <navigator class="entrance--navigator-nav">
+                <image class="entrance--nav-img sk-image"></image>
+                <text class="entrance--nav-text sk-transparent sk-text-14-2857-71 sk-text">数码</text>
+              </navigator>
+            </view>
+            <view class="entrance--nav-item entrance--small">
+              <navigator class="entrance--navigator-nav">
+                <image class="entrance--nav-img sk-image"></image>
+                <text class="entrance--nav-text sk-transparent sk-text-14-2857-10 sk-text">电器</text>
+              </navigator>
+            </view>
+            <view class="entrance--nav-item entrance--small">
+              <navigator class="entrance--navigator-nav">
+                <image class="entrance--nav-img sk-image"></image>
+                <text class="entrance--nav-text sk-transparent sk-text-14-2857-669 sk-text">医药</text>
+              </navigator>
+            </view>
+            <view class="entrance--nav-item entrance--small">
+              <navigator class="entrance--navigator-nav">
+                <image class="entrance--nav-img sk-image"></image>
+                <text class="entrance--nav-text sk-transparent sk-text-14-2857-357 sk-text">海淘</text>
+              </navigator>
+            </view>
+            <view class="entrance--nav-item entrance--small">
+              <navigator class="entrance--navigator-nav">
+                <image class="entrance--nav-img sk-image"></image>
+                <text class="entrance--nav-text sk-transparent sk-text-14-2857-44 sk-text">二手</text>
+              </navigator>
+            </view>
+          </view>
+        </view>
+        <view class="adver">
+          <view class="adver-left">
+            <navigator>
+              <image mode="widthFix" style="height: 218.681px;" class="sk-image"></image>
+            </navigator>
+          </view>
+          <view class="adver-right">
+            <view>
+              <navigator>
+                <image mode="widthFix" style="height: 104.688px;" class="sk-image"></image>
+              </navigator>
+            </view>
+            <view>
+              <navigator>
+                <image mode="widthFix" style="height: 104.688px;" class="sk-image"></image>
+              </navigator>
+            </view>
+          </view>
+        </view>
+        <view is="components/goods-list/goods-list">
+          <view class="list--goods_container">
+            <view class="list--goods_title sk-transparent sk-text-11-5385-528 sk-text" style="background-position-x: 50%;">猜你喜欢</view>
+            <view class="list--goods_card_list sk-pseudo sk-pseudo-circle">
+              <view is="components/goods-card/goods-card">
+                <view class="card--goods_list_container">
+                  <view class="card--goods_cart_container">
+                    <navigator class="card--navigator_nav">
+                      <image class="card--good_img sk-image" mode="widthFix" style="height: 177.635px;"></image>
+                      <view class="card--goods_item_info">
+                        <text class="card--goods_item_info_name sk-transparent sk-text-14-2857-99 sk-text">经典法式可颂面包</text>
+                        <text class="card--goods_item_info_promo sk-transparent sk-text-14-2857-359 sk-text">酥脆千层·黄金蜂窝·匠心烘焙</text>
+                        <view class="card--goods_item_info_bottom">
+                          <view class="card--goods_item_info_price sk-transparent">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>9.9
+                          </view>
+                          <view class="card--goods_item_info_origin_price sk-transparent" style="text-decoration-color: transparent;">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>19.9
+                          </view>
+                          <view class="card--goods_item_info_btn">
+                            <image class="card--goods_image sk-image"></image>
+                          </view>
+                        </view>
+                      </view>
+                    </navigator>
+                  </view>
+                  <view class="card--goods_cart_container">
+                    <navigator class="card--navigator_nav">
+                      <image class="card--good_img sk-image" mode="widthFix" style="height: 177.635px;"></image>
+                      <view class="card--goods_item_info">
+                        <text class="card--goods_item_info_name sk-transparent sk-text-14-2857-365 sk-text">经典法式可颂面包</text>
+                        <text class="card--goods_item_info_promo sk-transparent sk-text-14-2857-479 sk-text">酥脆千层·黄金蜂窝·匠心烘焙</text>
+                        <view class="card--goods_item_info_bottom">
+                          <view class="card--goods_item_info_price sk-transparent">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>9.9
+                          </view>
+                          <view class="card--goods_item_info_origin_price sk-transparent" style="text-decoration-color: transparent;">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>19.9
+                          </view>
+                          <view class="card--goods_item_info_btn">
+                            <image class="card--goods_image sk-image"></image>
+                          </view>
+                        </view>
+                      </view>
+                    </navigator>
+                  </view>
+                </view>
+              </view>
+              <view is="components/goods-card/goods-card">
+                <view class="card--goods_list_container">
+                  <view class="card--goods_cart_container">
+                    <navigator class="card--navigator_nav">
+                      <image class="card--good_img sk-image" mode="widthFix" style="height: 177.635px;"></image>
+                      <view class="card--goods_item_info">
+                        <text class="card--goods_item_info_name sk-transparent sk-text-14-2857-880 sk-text">经典法式可颂面包</text>
+                        <text class="card--goods_item_info_promo sk-transparent sk-text-14-2857-982 sk-text">酥脆千层·黄金蜂窝·匠心烘焙</text>
+                        <view class="card--goods_item_info_bottom">
+                          <view class="card--goods_item_info_price sk-transparent">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>9.9
+                          </view>
+                          <view class="card--goods_item_info_origin_price sk-transparent" style="text-decoration-color: transparent;">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>19.9
+                          </view>
+                          <view class="card--goods_item_info_btn">
+                            <image class="card--goods_image sk-image"></image>
+                          </view>
+                        </view>
+                      </view>
+                    </navigator>
+                  </view>
+                  <view class="card--goods_cart_container">
+                    <navigator class="card--navigator_nav">
+                      <image class="card--good_img sk-image" mode="widthFix" style="height: 177.635px;"></image>
+                      <view class="card--goods_item_info">
+                        <text class="card--goods_item_info_name sk-transparent sk-text-14-2857-871 sk-text">经典法式可颂面包</text>
+                        <text class="card--goods_item_info_promo sk-transparent sk-text-14-2857-516 sk-text">酥脆千层·黄金蜂窝·匠心烘焙</text>
+                        <view class="card--goods_item_info_bottom">
+                          <view class="card--goods_item_info_price sk-transparent">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>9.9
+                          </view>
+                          <view class="card--goods_item_info_origin_price sk-transparent" style="text-decoration-color: transparent;">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>19.9
+                          </view>
+                          <view class="card--goods_item_info_btn">
+                            <image class="card--goods_image sk-image"></image>
+                          </view>
+                        </view>
+                      </view>
+                    </navigator>
+                  </view>
+                </view>
+              </view>
+              <view is="components/goods-card/goods-card">
+                <view class="card--goods_list_container">
+                  <view class="card--goods_cart_container">
+                    <navigator class="card--navigator_nav">
+                      <image class="card--good_img sk-image" mode="widthFix" style="height: 177.635px;"></image>
+                      <view class="card--goods_item_info">
+                        <text class="card--goods_item_info_name sk-transparent sk-text-14-2857-310 sk-text">经典法式可颂面包</text>
+                        <text class="card--goods_item_info_promo sk-transparent sk-text-14-2857-302 sk-text">酥脆千层·黄金蜂窝·匠心烘焙</text>
+                        <view class="card--goods_item_info_bottom">
+                          <view class="card--goods_item_info_price sk-transparent">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>9.9
+                          </view>
+                          <view class="card--goods_item_info_origin_price sk-transparent" style="text-decoration-color: transparent;">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>19.9
+                          </view>
+                          <view class="card--goods_item_info_btn">
+                            <image class="card--goods_image sk-image"></image>
+                          </view>
+                        </view>
+                      </view>
+                    </navigator>
+                  </view>
+                  <view class="card--goods_cart_container">
+                    <navigator class="card--navigator_nav">
+                      <image class="card--good_img sk-image" mode="widthFix" style="height: 177.635px;"></image>
+                      <view class="card--goods_item_info">
+                        <text class="card--goods_item_info_name sk-transparent sk-text-14-2857-580 sk-text">经典法式可颂面包</text>
+                        <text class="card--goods_item_info_promo sk-transparent sk-text-14-2857-987 sk-text">酥脆千层·黄金蜂窝·匠心烘焙</text>
+                        <view class="card--goods_item_info_bottom">
+                          <view class="card--goods_item_info_price sk-transparent">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>9.9
+                          </view>
+                          <view class="card--goods_item_info_origin_price sk-transparent" style="text-decoration-color: transparent;">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>19.9
+                          </view>
+                          <view class="card--goods_item_info_btn">
+                            <image class="card--goods_image sk-image"></image>
+                          </view>
+                        </view>
+                      </view>
+                    </navigator>
+                  </view>
+                </view>
+              </view>
+              <view is="components/goods-card/goods-card">
+                <view class="card--goods_list_container">
+                  <view class="card--goods_cart_container">
+                    <navigator class="card--navigator_nav">
+                      <image class="card--good_img sk-image" mode="widthFix" style="height: 177.635px;"></image>
+                      <view class="card--goods_item_info">
+                        <text class="card--goods_item_info_name sk-transparent sk-text-14-2857-991 sk-text">经典法式可颂面包</text>
+                        <text class="card--goods_item_info_promo sk-transparent sk-text-14-2857-797 sk-text">酥脆千层·黄金蜂窝·匠心烘焙</text>
+                        <view class="card--goods_item_info_bottom">
+                          <view class="card--goods_item_info_price sk-transparent">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>9.9
+                          </view>
+                          <view class="card--goods_item_info_origin_price sk-transparent" style="text-decoration-color: transparent;">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>19.9
+                          </view>
+                          <view class="card--goods_item_info_btn">
+                            <image class="card--goods_image sk-image"></image>
+                          </view>
+                        </view>
+                      </view>
+                    </navigator>
+                  </view>
+                  <view class="card--goods_cart_container">
+                    <navigator class="card--navigator_nav">
+                      <image class="card--good_img sk-image" mode="widthFix" style="height: 177.635px;"></image>
+                      <view class="card--goods_item_info">
+                        <text class="card--goods_item_info_name sk-transparent sk-text-14-2857-14 sk-text">经典法式可颂面包</text>
+                        <text class="card--goods_item_info_promo sk-transparent sk-text-14-2857-406 sk-text">酥脆千层·黄金蜂窝·匠心烘焙</text>
+                        <view class="card--goods_item_info_bottom">
+                          <view class="card--goods_item_info_price sk-transparent">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>9.9
+                          </view>
+                          <view class="card--goods_item_info_origin_price sk-transparent" style="text-decoration-color: transparent;">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>19.9
+                          </view>
+                          <view class="card--goods_item_info_btn">
+                            <image class="card--goods_image sk-image"></image>
+                          </view>
+                        </view>
+                      </view>
+                    </navigator>
+                  </view>
+                </view>
+              </view>
+              <view is="components/goods-card/goods-card">
+                <view class="card--goods_list_container">
+                  <view class="card--goods_cart_container">
+                    <navigator class="card--navigator_nav">
+                      <image class="card--good_img sk-image" mode="widthFix" style="height: 177.635px;"></image>
+                      <view class="card--goods_item_info">
+                        <text class="card--goods_item_info_name sk-transparent sk-text-14-2857-454 sk-text">经典法式可颂面包</text>
+                        <text class="card--goods_item_info_promo sk-transparent sk-text-14-2857-355 sk-text">酥脆千层·黄金蜂窝·匠心烘焙</text>
+                        <view class="card--goods_item_info_bottom">
+                          <view class="card--goods_item_info_price sk-transparent">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>9.9
+                          </view>
+                          <view class="card--goods_item_info_origin_price sk-transparent" style="text-decoration-color: transparent;">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>19.9
+                          </view>
+                          <view class="card--goods_item_info_btn">
+                            <image class="card--goods_image sk-image"></image>
+                          </view>
+                        </view>
+                      </view>
+                    </navigator>
+                  </view>
+                  <view class="card--goods_cart_container">
+                    <navigator class="card--navigator_nav">
+                      <image class="card--good_img sk-image" mode="widthFix" style="height: 177.635px;"></image>
+                      <view class="card--goods_item_info">
+                        <text class="card--goods_item_info_name sk-transparent sk-text-14-2857-462 sk-text">经典法式可颂面包</text>
+                        <text class="card--goods_item_info_promo sk-transparent sk-text-14-2857-536 sk-text">酥脆千层·黄金蜂窝·匠心烘焙</text>
+                        <view class="card--goods_item_info_bottom">
+                          <view class="card--goods_item_info_price sk-transparent">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>9.9
+                          </view>
+                          <view class="card--goods_item_info_origin_price sk-transparent" style="text-decoration-color: transparent;">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>19.9
+                          </view>
+                          <view class="card--goods_item_info_btn">
+                            <image class="card--goods_image sk-image"></image>
+                          </view>
+                        </view>
+                      </view>
+                    </navigator>
+                  </view>
+                </view>
+              </view>
+              <view is="components/goods-card/goods-card">
+                <view class="card--goods_list_container">
+                  <view class="card--goods_cart_container">
+                    <navigator class="card--navigator_nav">
+                      <image class="card--good_img sk-image" mode="widthFix" style="height: 177.635px;"></image>
+                      <view class="card--goods_item_info">
+                        <text class="card--goods_item_info_name sk-transparent sk-text-14-2857-692 sk-text">经典法式可颂面包</text>
+                        <text class="card--goods_item_info_promo sk-transparent sk-text-14-2857-471 sk-text">酥脆千层·黄金蜂窝·匠心烘焙</text>
+                        <view class="card--goods_item_info_bottom">
+                          <view class="card--goods_item_info_price sk-transparent">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>9.9
+                          </view>
+                          <view class="card--goods_item_info_origin_price sk-transparent" style="text-decoration-color: transparent;">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>19.9
+                          </view>
+                          <view class="card--goods_item_info_btn">
+                            <image class="card--goods_image sk-image"></image>
+                          </view>
+                        </view>
+                      </view>
+                    </navigator>
+                  </view>
+                  <view class="card--goods_cart_container">
+                    <navigator class="card--navigator_nav">
+                      <image class="card--good_img sk-image" mode="widthFix" style="height: 177.635px;"></image>
+                      <view class="card--goods_item_info">
+                        <text class="card--goods_item_info_name sk-transparent sk-text-14-2857-424 sk-text">经典法式可颂面包</text>
+                        <text class="card--goods_item_info_promo sk-transparent sk-text-14-2857-929 sk-text">酥脆千层·黄金蜂窝·匠心烘焙</text>
+                        <view class="card--goods_item_info_bottom">
+                          <view class="card--goods_item_info_price sk-transparent">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>9.9
+                          </view>
+                          <view class="card--goods_item_info_origin_price sk-transparent" style="text-decoration-color: transparent;">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>19.9
+                          </view>
+                          <view class="card--goods_item_info_btn">
+                            <image class="card--goods_image sk-image"></image>
+                          </view>
+                        </view>
+                      </view>
+                    </navigator>
+                  </view>
+                </view>
+              </view>
+              <view is="components/goods-card/goods-card">
+                <view class="card--goods_list_container">
+                  <view class="card--goods_cart_container">
+                    <navigator class="card--navigator_nav">
+                      <image class="card--good_img sk-image" mode="widthFix" style="height: 177.635px;"></image>
+                      <view class="card--goods_item_info">
+                        <text class="card--goods_item_info_name sk-transparent sk-text-14-2857-983 sk-text">经典法式可颂面包</text>
+                        <text class="card--goods_item_info_promo sk-transparent sk-text-14-2857-643 sk-text">酥脆千层·黄金蜂窝·匠心烘焙</text>
+                        <view class="card--goods_item_info_bottom">
+                          <view class="card--goods_item_info_price sk-transparent">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>9.9
+                          </view>
+                          <view class="card--goods_item_info_origin_price sk-transparent" style="text-decoration-color: transparent;">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>19.9
+                          </view>
+                          <view class="card--goods_item_info_btn">
+                            <image class="card--goods_image sk-image"></image>
+                          </view>
+                        </view>
+                      </view>
+                    </navigator>
+                  </view>
+                  <view class="card--goods_cart_container">
+                    <navigator class="card--navigator_nav">
+                      <image class="card--good_img sk-image" mode="widthFix" style="height: 177.635px;"></image>
+                      <view class="card--goods_item_info">
+                        <text class="card--goods_item_info_name sk-transparent sk-text-14-2857-661 sk-text">经典法式可颂面包</text>
+                        <text class="card--goods_item_info_promo sk-transparent sk-text-14-2857-646 sk-text">酥脆千层·黄金蜂窝·匠心烘焙</text>
+                        <view class="card--goods_item_info_bottom">
+                          <view class="card--goods_item_info_price sk-transparent">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>9.9
+                          </view>
+                          <view class="card--goods_item_info_origin_price sk-transparent" style="text-decoration-color: transparent;">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>19.9
+                          </view>
+                          <view class="card--goods_item_info_btn">
+                            <image class="card--goods_image sk-image"></image>
+                          </view>
+                        </view>
+                      </view>
+                    </navigator>
+                  </view>
+                </view>
+              </view>
+              <view is="components/goods-card/goods-card">
+                <view class="card--goods_list_container">
+                  <view class="card--goods_cart_container">
+                    <navigator class="card--navigator_nav">
+                      <image class="card--good_img sk-image" mode="widthFix" style="height: 177.635px;"></image>
+                      <view class="card--goods_item_info">
+                        <text class="card--goods_item_info_name sk-transparent sk-text-14-2857-890 sk-text">经典法式可颂面包</text>
+                        <text class="card--goods_item_info_promo sk-transparent sk-text-14-2857-289 sk-text">酥脆千层·黄金蜂窝·匠心烘焙</text>
+                        <view class="card--goods_item_info_bottom">
+                          <view class="card--goods_item_info_price sk-transparent">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>9.9
+                          </view>
+                          <view class="card--goods_item_info_origin_price sk-transparent" style="text-decoration-color: transparent;">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>19.9
+                          </view>
+                          <view class="card--goods_item_info_btn">
+                            <image class="card--goods_image sk-image"></image>
+                          </view>
+                        </view>
+                      </view>
+                    </navigator>
+                  </view>
+                  <view class="card--goods_cart_container">
+                    <navigator class="card--navigator_nav">
+                      <image class="card--good_img sk-image" mode="widthFix" style="height: 177.635px;"></image>
+                      <view class="card--goods_item_info">
+                        <text class="card--goods_item_info_name sk-transparent sk-text-14-2857-813 sk-text">经典法式可颂面包</text>
+                        <text class="card--goods_item_info_promo sk-transparent sk-text-14-2857-68 sk-text">酥脆千层·黄金蜂窝·匠心烘焙</text>
+                        <view class="card--goods_item_info_bottom">
+                          <view class="card--goods_item_info_price sk-transparent">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>9.9
+                          </view>
+                          <view class="card--goods_item_info_origin_price sk-transparent" style="text-decoration-color: transparent;">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>19.9
+                          </view>
+                          <view class="card--goods_item_info_btn">
+                            <image class="card--goods_image sk-image"></image>
+                          </view>
+                        </view>
+                      </view>
+                    </navigator>
+                  </view>
+                </view>
+              </view>
+              <view is="components/goods-card/goods-card">
+                <view class="card--goods_list_container">
+                  <view class="card--goods_cart_container">
+                    <navigator class="card--navigator_nav">
+                      <image class="card--good_img sk-image" mode="widthFix" style="height: 177.635px;"></image>
+                      <view class="card--goods_item_info">
+                        <text class="card--goods_item_info_name sk-transparent sk-text-14-2857-745 sk-text">经典法式可颂面包</text>
+                        <text class="card--goods_item_info_promo sk-transparent sk-text-14-2857-310 sk-text">酥脆千层·黄金蜂窝·匠心烘焙</text>
+                        <view class="card--goods_item_info_bottom">
+                          <view class="card--goods_item_info_price sk-transparent">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>9.9
+                          </view>
+                          <view class="card--goods_item_info_origin_price sk-transparent" style="text-decoration-color: transparent;">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>19.9
+                          </view>
+                          <view class="card--goods_item_info_btn">
+                            <image class="card--goods_image sk-image"></image>
+                          </view>
+                        </view>
+                      </view>
+                    </navigator>
+                  </view>
+                  <view class="card--goods_cart_container">
+                    <navigator class="card--navigator_nav">
+                      <image class="card--good_img sk-image" mode="widthFix" style="height: 177.635px;"></image>
+                      <view class="card--goods_item_info">
+                        <text class="card--goods_item_info_name sk-transparent sk-text-14-2857-772 sk-text">经典法式可颂面包</text>
+                        <text class="card--goods_item_info_promo sk-transparent sk-text-14-2857-408 sk-text">酥脆千层·黄金蜂窝·匠心烘焙</text>
+                        <view class="card--goods_item_info_bottom">
+                          <view class="card--goods_item_info_price sk-transparent">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>9.9
+                          </view>
+                          <view class="card--goods_item_info_origin_price sk-transparent" style="text-decoration-color: transparent;">
+                            <text class="card--text sk-transparent sk-opacity">¥</text>19.9
+                          </view>
+                          <view class="card--goods_item_info_btn">
+                            <image class="card--goods_image sk-image"></image>
+                          </view>
+                        </view>
+                      </view>
+                    </navigator>
+                  </view>
+                </view>
+              </view>
+              <view is="components/goods-card/goods-card">
+                <view class="card--goods_list_container">
+                  <view class="card--goods_cart_container">
+                    <navigator class="card--navigator_nav">
+                      <image class="card--good_img sk-image" mode="widthFix" style="height: 177.635px;"></image>
+                    </navigator>
+                  </view>
+                  <view class="card--goods_cart_container">
+                    <navigator class="card--navigator_nav">
+                      <image class="card--good_img sk-image" mode="widthFix" style="height: 177.635px;"></image>
+                    </navigator>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

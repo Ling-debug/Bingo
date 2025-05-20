@@ -1,0 +1,247 @@
+/* 全局容器 */
+.container {
+  position: relative;
+  min-height: 100vh;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0; /* 确保没有默认padding */
+  margin: 0; /* 确保没有默认margin */
+}
+
+/* 顶部Banner（完美贴合三边） */
+.top-banner {
+  width: 100%;
+  height: 320rpx;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  margin: 0; /* 清除默认margin */
+  padding: 0; /* 清除默认padding */
+  
+  .banner-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+/* 主内容容器 */
+.content-container {
+  flex: 1;
+  position: relative;
+  margin-top: -60rpx; /* 调整重叠量 */
+  border-radius: 40rpx 40rpx 0 0;
+  background: #fff;
+  padding: 40rpx 30rpx;
+  box-shadow: 0 -10rpx 30rpx rgba(0, 0, 0, 0.08);
+  z-index: 10;
+  margin-left: 0; /* 确保左边无间距 */
+  margin-right: 0; /* 确保右边无间距 */
+}
+
+/* 用户面板（独立卡片） */
+.user-panel {
+  margin-bottom: 40rpx;
+  background: #fff;
+  border-radius: 24rpx;
+  box-shadow: 0 8rpx 24rpx rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  position: relative;
+  
+  /* 未登录状态 */
+  .not-login {
+    display: flex;
+    align-items: center;
+    padding: 40rpx;
+    background: linear-gradient(135deg, #f8f8f8, #ffffff);
+    
+    .avatar {
+      width: 120rpx;
+      height: 120rpx;
+      border-radius: 50%;
+      margin-right: 30rpx;
+      border: 4rpx solid rgba(255, 255, 255, 0.8);
+      box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.1);
+    }
+    
+    .login-text {
+      flex: 1;
+      .username {
+        font-size: 36rpx;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 8rpx;
+      }
+      .hint {
+        font-size: 26rpx;
+        color: #999;
+      }
+    }
+  }
+  
+  /* 已登录状态 */
+  .logged-in {
+    display: flex;
+    align-items: center;
+    padding: 40rpx;
+    background: linear-gradient(135deg, #f5f7fa, #ffffff);
+    
+    .avatar {
+      width: 120rpx;
+      height: 120rpx;
+      border-radius: 50%;
+      margin-right: 30rpx;
+      border: 4rpx solid rgba(255, 255, 255, 0.8);
+      box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.1);
+    }
+    
+    .user-info {
+      flex: 1;
+      .username {
+        font-size: 36rpx;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 8rpx;
+      }
+      .welcome {
+        font-size: 26rpx;
+        color: #666;
+      }
+    }
+    
+    .settings-btn {
+      padding: 12rpx 24rpx;
+      background: rgba(0, 0, 0, 0.02);
+      border-radius: 40rpx;
+      font-size: 26rpx;
+      color: #666;
+      border: 1rpx solid #eee;
+    }
+  }
+}
+
+/* 订单面板 */
+.order-panel {
+  background: #fff;
+  border-radius: 24rpx;
+  padding: 30rpx;
+  margin-bottom: 40rpx;
+  box-shadow: 0 8rpx 24rpx rgba(0, 0, 0, 0.06);
+  
+  .panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40rpx;
+    
+    .title {
+      font-size: 34rpx;
+      font-weight: bold;
+      color: #333;
+    }
+    
+    .more {
+      font-size: 26rpx;
+      color: #999;
+    }
+  }
+  
+  .order-items {
+    display: flex;
+    justify-content: space-between;
+    
+    .order-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 25%;
+      
+      navigator {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .iconfont {
+        font-size: 60rpx;
+        color: #ff5000;
+        margin-bottom: 16rpx;
+      }
+      
+      text {
+        font-size: 26rpx;
+        color: #666;
+      }
+    }
+  }
+}
+
+/* 服务面板 */
+.service-panel {
+  background: #fff;
+  border-radius: 24rpx;
+  padding: 30rpx;
+  margin-bottom: 40rpx;
+  box-shadow: 0 8rpx 24rpx rgba(0, 0, 0, 0.06);
+  
+  .panel-header {
+    margin-bottom: 30rpx;
+    
+    .title {
+      font-size: 34rpx;
+      font-weight: bold;
+      color: #333;
+    }
+  }
+  
+  .service-item {
+    display: flex;
+    align-items: center;
+    padding: 28rpx 0;
+    border-bottom: 1rpx solid #f5f5f5;
+    
+    &:last-child {
+      border-bottom: none;
+    }
+    
+    .iconfont {
+      font-size: 44rpx;
+      color: #ff5000;
+      margin-right: 24rpx;
+      width: 50rpx;
+      text-align: center;
+    }
+    
+    text {
+      font-size: 28rpx;
+      color: #666;
+      flex: 1;
+    }
+  }
+}
+
+/* 页脚 */
+.footer {
+  text-align: center;
+  padding: 40rpx 0;
+  color: #999;
+  font-size: 24rpx;
+  margin-top: 20rpx;
+}
+
+/* 图标字体颜色 */
+.icon-dingdan { color: #ff6b81 !important; }
+.icon-lipinka { color: #7bed9f !important; }
+.icon-tuikuan { color: #70a1ff !important; }
+.icon-kefu { color: #ff7f50 !important; }
+.icon-time { color: #2ed573 !important; }
+.icon-refund { color: #ff6348 !important; }
+.icon-policy { color: #5352ed !important; }

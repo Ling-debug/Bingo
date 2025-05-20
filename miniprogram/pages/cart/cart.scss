@@ -1,0 +1,143 @@
+/* 基础样式 */
+.container {
+  padding-bottom: 150px;
+  background: #f7f7f7;
+  min-height: 100vh;
+}
+
+.goods-wrap {
+  padding: 10px;
+}
+
+.empty-cart {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 商品项样式 */
+.goods-item {
+  margin-bottom: 10px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.goods-info {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+}
+
+.left {
+  width: 40px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.mid {
+  width: 80px;
+  height: 80px;
+  margin: 0 10px;
+  border-radius: 4px;
+  overflow: hidden;
+  flex-shrink: 0;
+  
+  .img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}
+
+.right {
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.price-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.price {
+  color: #fa4126;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.stepper {
+  margin-left: 10px;
+}
+
+.blessing {
+  font-size: 12px;
+  color: #666;
+  padding: 4px 6px;
+  background: #f7f7f7;
+  border-radius: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.delete-btn {
+  color: white;
+  width: 65px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fa4126;
+}
+
+/* 复选框样式 */
+.item-checkbox,
+.all-checkbox {
+  .van-checkbox__icon--checked .van-icon {
+    background-color: #fa4126 !important;
+    border-color: #fa4126 !important;
+    color: white !important; /* 确保对勾图标是白色 */
+  }
+  
+  .van-checkbox__icon {
+    font-size: 20px;
+    border: 1px solid #ccc; /* 添加默认边框 */
+  }
+  
+  /* 未选中状态样式 */
+  .van-checkbox__icon:not(.van-checkbox__icon--checked) .van-icon {
+    background-color: transparent !important;
+    border-color: #ccc !important;
+  }
+}
+
+/* 底部栏样式 */
+.van-submit-bar {
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+  
+  .van-checkbox__label {
+    margin-left: 10px;
+  }
+}

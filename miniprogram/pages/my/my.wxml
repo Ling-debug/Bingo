@@ -1,0 +1,81 @@
+<view class="container">
+  <!-- 顶部Banner（与屏幕三边贴合） -->
+  <view class="top-banner">
+    <image 
+      mode="aspectFill" 
+      src="/assets/images/banner.jpg" 
+      class="banner-image"
+    ></image>
+  </view>
+
+  <!-- 主内容区（独立的面板容器） -->
+  <view class="content-container">
+    <!-- 用户信息面板 -->
+    <view class="user-panel section">
+      <view wx:if="{{!token}}" class="not-login" bindtap="toLoginPage">
+        <image src="/assets/images/avatar.png" class="avatar"></image>
+        <view class="login-text">
+          <text class="username">未登录</text>
+          <text class="hint">点击授权登录</text>
+        </view>
+      </view>
+
+      <view wx:else class="logged-in">
+        <image src="{{userInfo.avatarUrl || '/assets/images/avatar.png'}}" class="avatar"></image>
+        <view class="user-info">
+          <text class="username">{{userInfo.nickName || '微信用户'}}</text>
+          <text class="welcome">欢迎回来</text>
+        </view>
+        <navigator url="/pages/settings/settings" class="settings-btn">设置</navigator>
+      </view>
+    </view>
+
+    <!-- 订单面板 -->
+    <view class="order-panel section">
+      <view class="panel-header">
+        <text class="title">我的订单</text>
+        <navigator url="{{token ? '/pages/order/list/list' : '/pages/login/login'}}" class="more">查看更多 ></navigator>
+      </view>
+      <view class="order-items">
+        <view 
+          wx:for="{{initpanel}}" 
+          wx:key="title" 
+          class="order-item"
+        >
+          <navigator url="{{token ? item.url : '/pages/login/login'}}">
+            <view class="iconfont {{item.iconfont}}"></view>
+            <text>{{item.title}}</text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+
+    <!-- 服务面板 -->
+    <view class="service-panel section">
+      <view class="panel-header">
+        <text class="title">关于售前售后服务</text>
+      </view>
+      <view class="service-item">
+        <view class="iconfont icon-kefu"></view>
+        <text>可与小程序客服实时聊天或电话咨询</text>
+      </view>
+      <view class="service-item">
+        <view class="iconfont icon-time"></view>
+        <text>客服工作时间为: 13:00 ~ 18:00</text>
+      </view>
+      <view class="service-item">
+        <view class="iconfont icon-refund"></view>
+        <text>七天内有理由退款</text>
+      </view>
+      <view class="service-item">
+        <view class="iconfont icon-policy"></view>
+        <text>不支持仅退款</text>
+      </view>
+    </view>
+
+    <!-- 页脚 -->
+    <view class="footer">
+      致谢 i錦鯉de叨叨 提供技术支持
+    </view>
+  </view>
+</view>

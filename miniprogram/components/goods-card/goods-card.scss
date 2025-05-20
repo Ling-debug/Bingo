@@ -1,0 +1,111 @@
+/* components/goods-card/goods-card.wxss */
+
+/* 商品列表容器 - 两列布局 */
+.goods_list_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20rpx; /* 增加外围间距 */
+}
+
+/* 单个商品卡片 */
+.goods_cart_container {
+  width: 48%; /* 两列布局，留4%间隙 */
+  margin-bottom: 20rpx;
+  background: #fff;
+  border-radius: 18rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.05); /* 增加轻微阴影 */
+  overflow: hidden; /* 防止内容溢出圆角 */
+  box-sizing: border-box;
+}
+
+/* 商品图片 */
+.good_img {
+  width: 100%;
+  height: 360rpx; /* 固定高度保持整齐 */
+  display: block;
+  border-top-left-radius: 16rpx;
+  border-top-right-radius: 16rpx;
+  object-fit: cover; /* 图片裁剪填充 */
+}
+
+/* 商品信息区域 */
+.goods_item_info {
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  min-height: 180rpx; /* 统一信息区域高度 */
+}
+
+/* 商品名称 */
+.goods_item_info_name {
+  font-weight: 600;
+  font-size: 28rpx;
+  color: #333;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 限制两行 */
+  -webkit-box-orient: vertical;
+}
+
+/* 商品描述 */
+.goods_item_info_promo {
+  margin-top: 12rpx;
+  font-size: 24rpx;
+  color: #999;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 限制两行 */
+  -webkit-box-orient: vertical;
+}
+
+/* 价格区域 */
+.goods_item_info_bottom {
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+}
+
+/* 当前价格 */
+.goods_item_info_price {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #f3514f;
+  display: flex;
+  align-items: baseline;
+}
+
+.goods_item_info_price .text {
+  font-size: 24rpx;
+  margin-right: 2rpx;
+  font-weight: normal;
+}
+
+/* 原价 */
+.goods_item_info_origin_price {
+  font-size: 24rpx;
+  color: #999;
+  text-decoration: line-through;
+  margin-left: 10rpx;
+  display: flex;
+  align-items: baseline;
+}
+
+.goods_item_info_origin_price .text {
+  font-size: 20rpx;
+}
+
+/* 购买按钮 */
+.goods_item_info_btn {
+  margin-left: auto; /* 靠右对齐 */
+}
+
+.goods_image {
+  width: 50rpx;
+  height: 50rpx;
+  display: block;
+}
